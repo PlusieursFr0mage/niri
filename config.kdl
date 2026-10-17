@@ -388,8 +388,10 @@ binds {
     Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+Space hotkey-overlay-title="Run an Application: wofi" { spawn-sh "pgrep -x wofi && pkill -x wofi || wofi --show drun"; }
     Mod+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn-sh "swaylock -C ~/.config/swaylock/config"; }
-    Mod+Shift+A hotkey-overlay-title="Lock the Screen: swaylock" { spawn-sh "awww img /home/unfromage/Images/Wallpaper/ascii-magic-2.png"; }
-    Mod+Shift+Z hotkey-overlay-title="Lock the Screen: swaylock" { spawn-sh "awww img /home/unfromage/Images/Wallpaper/ascii-magic-3.png"; }
+    Mod+Alt+A hotkey-overlay-title="Change wallpaper: awww" { spawn-sh "awww img /home/unfromage/Images/Wallpaper/ascii-magic-2.png"; }
+    Mod+Alt+Z hotkey-overlay-title="Change wallpaper: awww" { spawn-sh "awww img /home/unfromage/Images/Wallpaper/ascii-magic-3.png"; }
+    Mod+Alt+E hotkey-overlay-title="Change wallpaper: awww" { spawn-sh "awww img /home/unfromage/Images/Wallpaper/ascii-magic-4.png"; }
+    Mod+Alt+R hotkey-overlay-title="Change wallpaper: awww" { spawn-sh "awww img /home/unfromage/Images/Wallpaper/ascii-magic-5.png"; }
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
     // For example, this is a standard bind to toggle the screen reader (orca).
