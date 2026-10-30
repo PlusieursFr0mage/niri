@@ -18,6 +18,9 @@ overview {
         off
     }
 }
+switch-events {
+    lid-close { spawn "swaylock"; }
+}
 
 // Make the wallpaper stationary, rather than moving with workspaces.
 layer-rule {
@@ -660,6 +663,7 @@ binds {
   Mod+S { spawn "miri" "action" "set-focused-workspace-mode" "scroll"; }
   Mod+M { spawn "miri" "action" "set-focused-workspace-mode" "master"; }
   Mod+C { spawn "miri" "action" "cycle-focused-workspace-mode"; }
+
 }
 
 gestures {
