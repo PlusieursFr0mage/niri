@@ -18,9 +18,6 @@ overview {
         off
     }
 }
-switch-events {
-    lid-close { spawn "swaylock"; }
-}
 
 // Make the wallpaper stationary, rather than moving with workspaces.
 layer-rule {
@@ -293,7 +290,7 @@ spawn-at-startup "waybar"
 spawn-at-startup "awww-daemon"
 spawn-at-startup "miri" "service" "start"
 spawn-at-startup "quickshell"
-
+spawn-sh-at-startup "swayidle -w before-sleep 'swaylock -f -c 000000' lock 'swaylock -f -c 000000'"
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
 
